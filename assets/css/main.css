@@ -7964,3 +7964,71 @@ section,
   justify-content: center;
   margin: 0 auto 15px;
 }
+
+.portfolio-swiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.portfolio-swiper .swiper-slide {
+  background: #fff; /* fundo do card, se quiser */
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.portfolio-swiper .swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.portfolio-swiper .swiper-slide:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Dots/Pagination */
+.portfolio-swiper .swiper-pagination {
+  bottom: 10px !important;
+}
+
+.portfolio-swiper .swiper-pagination-bullet {
+  background: #f0f0f0;
+  opacity: 0.7;
+  width: 12px;
+  height: 12px;
+  margin: 0 4px !important;
+  transition: all 0.3s;
+}
+
+.portfolio-swiper .swiper-pagination-bullet-active {
+  background: #7e90fe;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Botões de navegação */
+.portfolio-swiper .swiper-button-next,
+.portfolio-swiper .swiper-button-prev {
+  color: transparent;
+  transition: 0.3s;
+}
+
+.portfolio-swiper .swiper-button-next:hover,
+.portfolio-swiper .swiper-button-prev:hover {
+  color: #0a58ca;
+}
+
+/* Responsivo extra */
+@media (max-width: 768px) {
+  .portfolio-swiper {
+    padding: 15px 0;
+  }
+}
