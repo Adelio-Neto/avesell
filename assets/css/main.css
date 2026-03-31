@@ -7955,8 +7955,8 @@ section,
 .step-number {
   width: 50px;
   height: 50px;
-  background: #0d6efd;
-  color: #fff;
+  background: #edecfc;
+  color: #7e90fe;
   font-weight: bold;
   border-radius: 50%;
   display: flex;
