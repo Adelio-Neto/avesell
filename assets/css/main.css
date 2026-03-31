@@ -13,11 +13,11 @@
   --background-color: #f1f5f9; /* Background color for the entire website, including individual sections */
   --default-color: #475569; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #1e293b; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ff0000; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #7e90fe; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-  --accent: #ff0000;
-  --accent2: #ff0000;
+  --accent: #7e90fe;
+  --accent2: #7e90fe;
   --dark: #0b1120;
   --text: #374151;
   --muted: #6b7280;
@@ -31,11 +31,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #475569; /* The default color of the main navmenu links */
-  --nav-hover-color: #ff0000; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #7e90fe; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #475569; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ff0000; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #7e90fe; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -7666,4 +7666,238 @@ section,
     max-width: 100%;
     margin: 0 auto 30px auto;
   }
+}
+
+.modal-reg-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.modal-reg-backdrop.open {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal-reg {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 660px;
+  max-height: 92vh;
+  overflow-y: auto;
+  position: relative;
+  transform: translateY(20px) scale(0.97);
+  transition: transform 0.3s;
+}
+.modal-reg-backdrop.open .modal-reg {
+  transform: translateY(0) scale(1);
+}
+.modal-reg-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  transition: background 0.2s;
+}
+.modal-reg-close:hover {
+  background: #eee;
+}
+.modal-reg-tag {
+  display: inline-block;
+  background: #fff;
+  color: #7e90fe;
+  border: 1px solid rgba(124, 165, 252, 0.2);
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  margin-bottom: 10px;
+}
+.modal-reg h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+.modal-reg .modal-sub {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 24px;
+}
+.modal-section-lbl {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #aaa;
+  margin: 20px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.modal-grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.modal-grid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
+}
+.modal-field {
+  margin-bottom: 0;
+}
+.modal-field label {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 6px;
+}
+.modal-field input,
+.modal-field select {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px 13px;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+  transition: border-color 0.2s;
+  background: #fafafa;
+  font-family: inherit;
+}
+.modal-field input:focus,
+.modal-field select:focus {
+  border-color: #7e90fe;
+  background: #fff;
+}
+.modal-field input::placeholder {
+  color: #bbb;
+}
+.modal-submit {
+  width: 100%;
+  margin-top: 22px;
+  background: #7e90fe;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 13px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s;
+  font-family: inherit;
+}
+.modal-submit:hover {
+  background: #7e90fe;
+}
+.modal-secure {
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 10px;
+}
+.modal-secure i {
+  color: #7e90fe;
+}
+.modal-success {
+  display: none;
+  text-align: center;
+  padding: 20px 0;
+}
+.modal-success i {
+  font-size: 52px;
+  color: #7e90fe;
+  display: block;
+  margin-bottom: 14px;
+}
+.modal-success h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+.modal-success p {
+  font-size: 14px;
+  color: #888;
+}
+@media (max-width: 600px) {
+  .modal-grid2,
+  .modal-grid3 {
+    grid-template-columns: 1fr;
+  }
+  .modal-reg {
+    padding: 28px 20px;
+  }
+}
+
+.img-carousel {
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.img-main {
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.img-main img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+}
+
+.img-thumbs {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.img-thumbs img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.img-thumbs img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.img-thumbs img.active {
+  border: 2px solid #6c47ff;
+  opacity: 1;
 }

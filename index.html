@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>RentoGoo</title>
+    <title>Avesell</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
@@ -48,30 +48,28 @@
           href="index.html"
           class="logo d-flex align-items-center me-auto me-xl-0"
         >
-          <h1 class="sitename">RentoGoo</h1>
-          <span>.</span>
+          <h1 class="sitename">
+            <img src="assets/img/LOGOTIPO.ico" class="logo-img" alt="Avesell" />
+          </h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
             <li>
-              <a href="#hero" class="active" data-i18n="nav_home">Início</a>
+              <a href="#hero" class="active">Início</a>
             </li>
-            <li><a href="#about" data-i18n="nav_about">Sobre Nós</a></li>
-            <li><a href="#plans" data-i18n="nav_plans">Planos</a></li>
-            <li><a href="#services" data-i18n="nav_services">Vantagens</a></li>
+            <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#plans">Planos</a></li>
             <li>
-              <a href="#portfolio" data-i18n="nav_portfolio">Funcionalidades</a>
+              <a href="#portfolio">Funcionalidades</a>
             </li>
-            <li><a href="#why-us" data-i18n="nav_faq">FAQ</a></li>
-            <li><a href="#contact" data-i18n="nav_contact">Contatos</a></li>
+            <li><a href="#why-us">FAQ</a></li>
+            <li><a href="#contact">Contatos</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a href="login.html" class="btn-getstarted" data-i18n="nav_login"
-          >Entrar</a
-        >
+        <a href="/login.php" class="btn-getstarted">Entrar</a>
       </div>
     </header>
 
@@ -81,97 +79,47 @@
           <div class="row align-items-center">
             <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
               <div class="hero-content">
-                <h1
+                <h5
                   class="hero-headline"
                   data-aos="fade-up"
                   data-aos-delay="300"
-                  data-i18n="hero_title"
                 >
-                  Gerencie a Sua Frota de forma inteligente
-                </h1>
+                  Crie sua loja e comece a vender online
+                </h5>
 
-                <p
-                  class="hero-text"
-                  data-aos="fade-up"
-                  data-aos-delay="350"
-                  data-i18n="hero_text"
-                >
-                  Plataforma completa para gestão de frotas, reservas e
-                  condutores. Reduza custos, aumente a produtividade e tome
-                  decisões com base em dados reais.
+                <p class="hero-text" data-aos="fade-up" data-aos-delay="350">
+                  A plataforma completa para e-commerce que cresce com o seu
+                  negócio. Sem taxas ocultas, sem complexidade. Apenas você e as
+                  suas vendas.
                 </p>
 
                 <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
                   <a href="register.html" class="cta-button">
-                    <span data-i18n="hero_btn_register"> Registra-se</span>
+                    <span>Criar Loja Grátis</span>
                     <i class="bi bi-arrow-right"></i>
                   </a>
-                  <a
-                    href="#"
-                    class="glightbox cta-link"
-                    data-gallery="hero-video"
-                  >
+                  <a href="https://www.youtube.com" class="glightbox cta-link">
                     <i class="bi bi-play-circle"></i>
-                    <span data-i18n="hero_btn_video">Ver Vídeo</span>
+                    <span>Ver Vídeo</span>
                   </a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-              <div class="stats-grid">
-                <div
-                  class="stat-card stat-card-primary"
-                  data-aos="zoom-in"
-                  data-aos-delay="350"
-                >
-                  <div class="stat-icon-wrap">
-                    <i class="bi bi-car-front"></i>
-                  </div>
-                  <div class="stat-info">
-                    <span class="stat-value">232K+</span>
-                    <span class="stat-title" data-i18n="hero_stat_vehicles"
-                      >Veículos Geridos</span
-                    >
-                  </div>
+              <div class="img-carousel" id="imgCarousel">
+                <div class="img-main">
+                  <img id="imgMain" src="assets/img/demo1.png" alt="preview" />
                 </div>
 
-                <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="stat-icon-wrap"><i class="bi bi-people"></i></div>
-                  <div class="stat-info">
-                    <span class="stat-value">204K+</span>
-                    <span class="stat-title" data-i18n="hero_stat_users"
-                      >Utilizadores Activos</span
-                    >
-                  </div>
-                </div>
-
-                <div class="stat-card" data-aos="zoom-in" data-aos-delay="450">
-                  <div class="stat-icon-wrap">
-                    <i class="bi bi-graph-down-arrow"></i>
-                  </div>
-                  <div class="stat-info">
-                    <span class="stat-value">R$ 897K</span>
-                    <span class="stat-title" data-i18n="hero_stat_saved"
-                      >Total Economizado</span
-                    >
-                  </div>
-                </div>
-
-                <div
-                  class="stat-card stat-card-accent"
-                  data-aos="zoom-in"
-                  data-aos-delay="500"
-                >
-                  <div class="stat-icon-wrap">
-                    <i class="bi bi-shield-check"></i>
-                  </div>
-                  <div class="stat-info">
-                    <span class="stat-value">99.9%</span>
-                    <span class="stat-title" data-i18n="hero_stat_uptime"
-                      >Disponibilidade</span
-                    >
-                  </div>
+                <div class="img-thumbs" id="imgThumbs">
+                  <img
+                    src="assets/img/portfolio/portfolio-1.webp"
+                    class="active"
+                  />
+                  <img src="assets/img/portfolio/portfolio-2.webp" />
+                  <img src="assets/img/portfolio/portfolio-3.webp" />
+                  <img src="assets/img/portfolio/portfolio-4.webp" />
                 </div>
               </div>
             </div>
@@ -183,539 +131,243 @@
         <div class="container">
           <div class="fsl-viewport" id="fslViewport">
             <div class="fsl-track" id="fslTrack">
-              <!-- Card 1 — Sistema Cloud CRM -->
+              <!-- Card 1 -->
               <div class="fsl-card">
                 <div class="fsl-icon">
-                  <svg viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Nuvens (mais suaves) -->
-                    <ellipse
-                      cx="60"
-                      cy="52"
-                      rx="46"
-                      ry="30"
-                      fill="#ff0000"
-                      opacity=".15"
-                    />
-                    <ellipse
-                      cx="38"
-                      cy="60"
-                      rx="20"
-                      ry="14"
-                      fill="#ff4d4d"
-                      opacity=".2"
-                    />
-                    <ellipse
-                      cx="82"
-                      cy="58"
-                      rx="18"
-                      ry="13"
-                      fill="#ff4d4d"
-                      opacity=".2"
-                    />
-                    <ellipse
-                      cx="60"
-                      cy="44"
-                      rx="26"
-                      ry="18"
-                      fill="#ff8080"
-                      opacity=".25"
-                    />
-
-                    <!-- Card principal (mais destaque) -->
-                    <rect
-                      x="38"
-                      y="50"
-                      width="44"
-                      height="36"
-                      rx="6"
-                      fill="#ff0000"
-                    />
-
-                    <!-- Topo do card -->
-                    <rect
-                      x="38"
-                      y="50"
-                      width="44"
-                      height="13"
-                      rx="6"
-                      fill="#ff3333"
-                    />
-
-                    <!-- Linhas -->
-                    <rect
-                      x="44"
-                      y="70"
-                      width="20"
-                      height="3"
-                      rx="1.5"
-                      fill="#ffffff"
-                      opacity=".9"
-                    />
-                    <rect
-                      x="44"
-                      y="76"
-                      width="14"
-                      height="3"
-                      rx="1.5"
-                      fill="#ffffff"
-                      opacity=".8"
-                    />
-
-                    <!-- Texto -->
-                    <text
-                      x="60"
-                      y="61"
-                      text-anchor="middle"
-                      font-size="8"
-                      font-weight="700"
-                      fill="#ffffff"
-                    >
-                      CRM
-                    </text>
-
-                    <!-- Bolinhas decorativas -->
-                    <circle cx="20" cy="30" r="3" fill="#ff8080" opacity=".3" />
-                    <circle
-                      cx="100"
-                      cy="25"
-                      r="2.5"
-                      fill="#ff4d4d"
-                      opacity=".4"
-                    />
-                    <circle
-                      cx="108"
-                      cy="55"
-                      r="2"
-                      fill="#ff9999"
-                      opacity=".3"
-                    />
-                  </svg>
-                </div>
-                <h3>Sistema Cloud CRM</h3>
-                <p>
-                  Cloud CRM para todos os tipos de negócios de aluguer de
-                  veículos e gestão de frotas.
-                </p>
-              </div>
-
-              <!-- Card 2 — Agendador de Tarefas -->
-              <div class="fsl-card">
-                <div class="fsl-icon">
-                  <svg viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Fundo (leve) -->
-                    <rect
-                      x="22"
-                      y="28"
-                      width="76"
-                      height="66"
-                      rx="10"
-                      fill="#ff0000"
-                      opacity=".08"
-                    />
-
-                    <!-- Topo -->
-                    <rect
-                      x="22"
-                      y="28"
-                      width="76"
-                      height="22"
-                      rx="10"
-                      fill="#ff3333"
-                    />
-
-                    <!-- Corpo -->
-                    <rect
-                      x="22"
-                      y="40"
-                      width="76"
-                      height="54"
-                      rx="10"
-                      fill="#ff0000"
-                      opacity=".15"
-                    />
-
-                    <!-- Pines -->
-                    <rect
-                      x="38"
-                      y="20"
-                      width="8"
-                      height="16"
-                      rx="4"
-                      fill="#cc0000"
-                    />
-                    <rect
-                      x="74"
-                      y="20"
-                      width="8"
-                      height="16"
-                      rx="4"
-                      fill="#cc0000"
-                    />
-
-                    <!-- Linhas -->
-                    <rect
-                      x="32"
-                      y="62"
-                      width="38"
-                      height="6"
-                      rx="3"
-                      fill="#ffffff"
-                      opacity=".9"
-                    />
-                    <rect
-                      x="32"
-                      y="72"
-                      width="28"
-                      height="6"
-                      rx="3"
-                      fill="#ffffff"
-                      opacity=".8"
-                    />
-                    <rect
-                      x="32"
-                      y="82"
-                      width="46"
-                      height="6"
-                      rx="3"
-                      fill="#ffffff"
-                      opacity=".6"
-                    />
-
-                    <!-- Check (agora vermelho) -->
-                    <circle cx="82" cy="72" r="12" fill="#ff0000" />
-                    <polyline
-                      points="76,72 80,76 88,66"
-                      stroke="#ffffff"
-                      stroke-width="2.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-
-                    <!-- Detalhes -->
-                    <circle
-                      cx="108"
-                      cy="32"
-                      r="3"
-                      fill="#ff8080"
-                      opacity=".4"
-                    />
-                    <circle cx="15" cy="70" r="2" fill="#ff4d4d" opacity=".4" />
-                  </svg>
-                </div>
-                <h3>Agendador<br />de Tarefas</h3>
-                <p>
-                  Planeador avançado para operação eficiente da sua frota e
-                  equipa.
-                </p>
-              </div>
-
-              <!-- Card 3 — Sistema VOS -->
-              <div class="fsl-card">
-                <div class="fsl-icon">
-                  <svg viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Fundo -->
+                  <svg viewBox="0 0 120 110">
                     <circle
                       cx="60"
                       cy="55"
                       r="38"
-                      fill="#ff0000"
+                      fill="#7E90FE"
                       opacity=".1"
                     />
+                    <rect
+                      x="35"
+                      y="40"
+                      width="50"
+                      height="40"
+                      rx="8"
+                      fill="#7E90FE"
+                    />
+                    <rect
+                      x="35"
+                      y="40"
+                      width="50"
+                      height="12"
+                      rx="8"
+                      fill="#5A6DF0"
+                    />
+                    <rect
+                      x="45"
+                      y="60"
+                      width="30"
+                      height="4"
+                      rx="2"
+                      fill="#fff"
+                    />
+                    <rect
+                      x="45"
+                      y="68"
+                      width="20"
+                      height="4"
+                      rx="2"
+                      fill="#fff"
+                      opacity=".7"
+                    />
+                  </svg>
+                </div>
+                <h3>Gestão de Produtos</h3>
+                <p>
+                  Cadastre produtos ilimitados com fotos em alta resolução,
+                  descrições detalhadas e controlo de stock automatizado.
+                </p>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="fsl-card">
+                <div class="fsl-icon">
+                  <svg viewBox="0 0 120 110">
                     <circle
                       cx="60"
                       cy="55"
-                      r="28"
-                      fill="#ff0000"
-                      opacity=".2"
+                      r="38"
+                      fill="#7E90FE"
+                      opacity=".1"
                     />
-
-                    <!-- Elemento principal -->
-                    <rect
-                      x="48"
-                      y="43"
-                      width="24"
-                      height="14"
-                      rx="4"
-                      fill="#ff0000"
-                      transform="rotate(-30 60 55)"
+                    <path d="M35 45 H85 L80 75 H40 Z" fill="#7E90FE" />
+                    <circle cx="50" cy="80" r="5" fill="#5A6DF0" />
+                    <circle cx="75" cy="80" r="5" fill="#5A6DF0" />
+                    <polyline
+                      points="50,55 60,65 75,50"
+                      stroke="#fff"
+                      stroke-width="3"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
                     />
+                  </svg>
+                </div>
+                <h3>Carrinho<br />Inteligente</h3>
+                <p>
+                  Carrinho de compras moderno com persistência de dados e
+                  sugestões de produtos relacionados.
+                </p>
+              </div>
 
-                    <!-- Laterais -->
+              <!-- Card 3 -->
+              <div class="fsl-card">
+                <div class="fsl-icon">
+                  <svg viewBox="0 0 120 110">
+                    <circle
+                      cx="60"
+                      cy="55"
+                      r="38"
+                      fill="#7E90FE"
+                      opacity=".1"
+                    />
                     <rect
-                      x="34"
-                      y="50"
-                      width="16"
-                      height="5"
-                      rx="2.5"
-                      fill="#ff8080"
-                      transform="rotate(-30 60 55)"
+                      x="40"
+                      y="45"
+                      width="40"
+                      height="30"
+                      rx="6"
+                      fill="#7E90FE"
+                    />
+                    <polyline
+                      points="45,60 55,68 75,50"
+                      stroke="#fff"
+                      stroke-width="3"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h3>Gestão de Pedidos</h3>
+                <p>
+                  Acompanhe todos os pedidos em tempo real, actualize status e
+                  gerencie envios de forma eficiente.
+                </p>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="fsl-card">
+                <div class="fsl-icon">
+                  <svg viewBox="0 0 120 110">
+                    <circle
+                      cx="60"
+                      cy="55"
+                      r="38"
+                      fill="#7E90FE"
+                      opacity=".1"
+                    />
+                    <rect
+                      x="40"
+                      y="55"
+                      width="8"
+                      height="20"
+                      rx="3"
+                      fill="#5A6DF0"
+                    />
+                    <rect
+                      x="55"
+                      y="45"
+                      width="8"
+                      height="30"
+                      rx="3"
+                      fill="#7E90FE"
                     />
                     <rect
                       x="70"
-                      y="50"
-                      width="16"
-                      height="5"
-                      rx="2.5"
-                      fill="#ff8080"
-                      transform="rotate(-30 60 55)"
-                    />
-
-                    <!-- Ondas -->
-                    <path
-                      d="M78 30 Q90 20 100 28"
-                      stroke="#ff3333"
-                      stroke-width="2.5"
-                      fill="none"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M82 36 Q91 28 99 34"
-                      stroke="#ff8080"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                    />
-
-                    <!-- Detalhes -->
-                    <circle cx="18" cy="28" r="3" fill="#ff8080" opacity=".4" />
-                    <circle
-                      cx="105"
-                      cy="75"
-                      r="2.5"
-                      fill="#ff4d4d"
-                      opacity=".4"
-                    />
-                    <circle cx="22" cy="82" r="2" fill="#ff9999" opacity=".4" />
-                  </svg>
-                </div>
-                <h3>Sistema VOS</h3>
-                <p>
-                  Controlo total do veículo com telemática avançada e
-                  rastreamento em tempo real.
-                </p>
-              </div>
-
-              <!-- Card 4 — Gestão e Relatórios -->
-              <div class="fsl-card">
-                <div class="fsl-icon">
-                  <svg viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Documento -->
-                    <rect
-                      x="28"
-                      y="18"
-                      width="52"
-                      height="68"
-                      rx="8"
-                      fill="#ff0000"
-                      opacity=".15"
-                    />
-                    <path d="M68 18 L80 30 L68 30 Z" fill="#ff3333" />
-
-                    <!-- Linhas -->
-                    <rect
-                      x="36"
-                      y="38"
-                      width="28"
-                      height="4"
-                      rx="2"
-                      fill="#ffffff"
-                      opacity=".9"
-                    />
-                    <rect
-                      x="36"
-                      y="46"
-                      width="22"
-                      height="3"
-                      rx="1.5"
-                      fill="#ffffff"
-                      opacity=".7"
-                    />
-                    <rect
-                      x="36"
-                      y="53"
-                      width="30"
-                      height="3"
-                      rx="1.5"
-                      fill="#ffffff"
-                      opacity=".5"
-                    />
-
-                    <!-- Gráfico -->
-                    <circle cx="74" cy="70" r="16" fill="#ff0000" />
-                    <path
-                      d="M74 70 L74 54 A16 16 0 0 1 88 70 Z"
-                      fill="#ff4d4d"
-                    />
-                    <path
-                      d="M74 70 L88 70 A16 16 0 0 1 67 85 Z"
-                      fill="#ff8080"
-                    />
-
-                    <!-- Lápis -->
-                    <rect
-                      x="88"
-                      y="38"
-                      width="6"
-                      height="28"
+                      y="35"
+                      width="8"
+                      height="40"
                       rx="3"
-                      fill="#ff3333"
-                      transform="rotate(15 91 52)"
-                    />
-                    <polygon
-                      points="91,66 88,74 94,74"
-                      fill="#cc0000"
-                      transform="rotate(15 91 52)"
-                    />
-
-                    <!-- Detalhes -->
-                    <circle
-                      cx="15"
-                      cy="40"
-                      r="2.5"
-                      fill="#ff8080"
-                      opacity=".4"
-                    />
-                    <circle
-                      cx="108"
-                      cy="28"
-                      r="2"
-                      fill="#ff9999"
-                      opacity=".4"
+                      fill="#AAB6FF"
                     />
                   </svg>
                 </div>
-                <h3>Gestão<br />e Relatórios</h3>
+                <h3>Relatórios<br />Avançados</h3>
                 <p>
-                  Relatórios detalhados e gestão de documentos da frota num só
-                  lugar.
+                  Visualize vendas, receita, produtos mais vendidos e métricas
+                  importantes em dashboards intuitivos.
                 </p>
               </div>
 
-              <!-- Card 5 — Controlo de Gastos -->
+              <!-- Card 5 -->
               <div class="fsl-card">
                 <div class="fsl-icon">
-                  <svg viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Card -->
-                    <rect
-                      x="20"
-                      y="35"
-                      width="72"
-                      height="48"
-                      rx="10"
-                      fill="#ff0000"
-                      opacity=".15"
+                  <svg viewBox="0 0 120 110">
+                    <circle
+                      cx="60"
+                      cy="55"
+                      r="38"
+                      fill="#7E90FE"
+                      opacity=".1"
                     />
                     <rect
-                      x="20"
-                      y="35"
-                      width="72"
+                      x="35"
+                      y="40"
+                      width="50"
+                      height="30"
+                      rx="6"
+                      fill="#7E90FE"
+                    />
+                    <rect
+                      x="50"
+                      y="70"
+                      width="20"
+                      height="6"
+                      rx="3"
+                      fill="#5A6DF0"
+                    />
+                    <rect
+                      x="52"
+                      y="75"
+                      width="16"
                       height="20"
-                      rx="10"
-                      fill="#ff3333"
-                    />
-
-                    <!-- Widget -->
-                    <rect
-                      x="68"
-                      y="48"
-                      width="28"
-                      height="22"
-                      rx="8"
-                      fill="#ff8080"
-                    />
-                    <circle cx="82" cy="59" r="7" fill="#ffffff" />
-                    <circle cx="82" cy="59" r="3.5" fill="#ff0000" />
-
-                    <!-- Dinheiro -->
-                    <circle cx="42" cy="72" r="8" fill="#ff4d4d" />
-                    <circle cx="42" cy="72" r="5" fill="#ff0000" />
-
-                    <text
-                      x="42"
-                      y="76"
-                      text-anchor="middle"
-                      font-size="7"
-                      font-weight="700"
-                      fill="#ffffff"
-                    >
-                      $
-                    </text>
-
-                    <!-- Detalhes -->
-                    <circle cx="16" cy="28" r="3" fill="#ff8080" opacity=".4" />
-                    <circle
-                      cx="106"
-                      cy="80"
-                      r="2.5"
-                      fill="#ff9999"
-                      opacity=".4"
+                      rx="4"
+                      fill="#AAB6FF"
                     />
                   </svg>
                 </div>
-                <h3>Controlo<br />de Gastos</h3>
+                <h3>Design<br />Responsivo</h3>
                 <p>
-                  Monitorize todas as despesas da frota — multas, combustível e
-                  manutenções.
+                  A sua loja funciona perfeitamente em computadores, tablets e
+                  smartphones.
                 </p>
               </div>
 
-              <!-- Card 6 — Alertas em Tempo Real -->
+              <!-- Card 6 -->
               <div class="fsl-card">
                 <div class="fsl-icon">
-                  <svg viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Base -->
-                    <path
-                      d="M60 20 C42 20 30 34 30 52 L30 68 L90 68 L90 52 C90 34 78 20 60 20 Z"
-                      fill="#ff3333"
-                    />
-                    <path d="M30 68 L90 68 L94 76 L26 76 Z" fill="#cc0000" />
-                    <circle cx="60" cy="82" r="7" fill="#990000" />
-
-                    <!-- Ondas -->
-                    <path
-                      d="M96 36 Q106 44 104 56"
-                      stroke="#ff8080"
-                      stroke-width="2.5"
-                      fill="none"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M100 30 Q114 42 112 60"
-                      stroke="#ff9999"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      opacity=".7"
-                    />
-
-                    <!-- Alerta -->
-                    <circle cx="82" cy="26" r="9" fill="#ff0000" />
-                    <text
-                      x="82"
-                      y="30"
-                      text-anchor="middle"
-                      font-size="9"
-                      font-weight="700"
-                      fill="#ffffff"
-                    >
-                      !
-                    </text>
-
-                    <!-- Detalhes -->
+                  <svg viewBox="0 0 120 110">
                     <circle
-                      cx="16"
-                      cy="35"
-                      r="2.5"
-                      fill="#ff8080"
-                      opacity=".4"
+                      cx="60"
+                      cy="55"
+                      r="38"
+                      fill="#7E90FE"
+                      opacity=".1"
                     />
-                    <circle cx="24" cy="80" r="2" fill="#ff9999" opacity=".4" />
+                    <path
+                      d="M60 35 L85 45 V65 C85 80 70 90 60 95 C50 90 35 80 35 65 V45 Z"
+                      fill="#5A6DF0"
+                    />
+                    <polyline
+                      points="50,60 58,68 72,50"
+                      stroke="#fff"
+                      stroke-width="3"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </div>
-                <h3>Alertas em<br />Tempo Real</h3>
+                <h3>Segurança<br />Avançada</h3>
                 <p>
-                  Notificações automáticas de velocidade, manutenção, seguros e
-                  muito mais.
+                  Protecção SSL, encriptação de dados e conformidade com padrões
+                  de segurança internacionais.
                 </p>
               </div>
             </div>
@@ -752,13 +404,11 @@
                   <span
                     class="years purecounter"
                     data-purecounter-start="0"
-                    data-purecounter-end="12"
+                    data-purecounter-end="5"
                     data-purecounter-duration="1"
-                    >12</span
+                    >5</span
                   >
-                  <span class="text" data-i18n="about_years"
-                    >Anos de<br />Experiência</span
-                  >
+                  <span class="text">Anos de<br />Experiência</span>
                 </div>
                 <div class="shape-pattern"></div>
               </div>
@@ -770,198 +420,39 @@
               data-aos-delay="300"
             >
               <div class="about-content">
-                <div class="section-subtitle" data-i18n="about_subtitle">
-                  Quem Somos
-                </div>
-                <h2 data-i18n="about_title">
-                  Inovando para o Sucesso da Sua Frota com Tecnologia
+                <div class="section-subtitle">Quem Somos</div>
+                <h2>
+                  A Plataforma Completa para Criar e Gerir a Sua Loja Online
                 </h2>
-                <p class="lead-text" data-i18n="about_lead">
-                  Somos uma plataforma dedicada à gestão inteligente de frotas,
-                  desenvolvida para empresas que querem reduzir custos, aumentar
-                  a eficiência e tomar decisões com base em dados reais.
+                <p class="lead-text">
+                  Somos uma plataforma dedicada ao e-commerce, desenvolvida para
+                  empreendedores que querem vender mais, sem complicações
+                  técnicas e sem taxas ocultas.
                 </p>
-                <p class="mb-4 description" data-i18n="about_desc">
-                  A nossa missão é simplificar a gestão do dia a dia da sua
-                  frota — desde o controlo de veículos e condutores até aos
-                  relatórios financeiros e alertas automáticos. Tudo numa
+                <p class="mb-4 description">
+                  A nossa missão é simplificar a criação e gestão de lojas
+                  online — desde o catálogo de produtos e carrinho de compras
+                  até aos relatórios de vendas e segurança avançada. Tudo numa
                   plataforma acessível em qualquer dispositivo, a qualquer hora.
                 </p>
 
                 <div class="features-grid">
                   <div class="feature-card">
                     <i class="bi bi-check-circle-fill"></i>
-                    <span data-i18n="about_feat1">Fácil de usar</span>
+                    <span>Fácil de usar</span>
                   </div>
                   <div class="feature-card">
                     <i class="bi bi-check-circle-fill"></i>
-                    <span data-i18n="about_feat2">Dados em tempo real</span>
+                    <span>Pedidos em tempo real</span>
                   </div>
                   <div class="feature-card">
                     <i class="bi bi-check-circle-fill"></i>
-                    <span data-i18n="about_feat3">Equipa especializada</span>
+                    <span>Equipa especializada</span>
                   </div>
                   <div class="feature-card">
                     <i class="bi bi-check-circle-fill"></i>
-                    <span data-i18n="about_feat4">Suporte 24/7</span>
+                    <span>Suporte 24/7</span>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="services" class="services section">
-        <div class="container section-title" data-aos="fade-up">
-          <h2 data-i18n="services_title">Vantagens da Nossa Plataforma</h2>
-          <p data-i18n="services_sub">
-            Tudo o que precisa para gerir a sua frota de forma eficiente, num só
-            lugar.
-          </p>
-        </div>
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row g-4">
-            <!-- Card 1 -->
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="service-card">
-                <div class="icon-wrapper"><i class="bi bi-geo-alt"></i></div>
-                <h3 data-i18n="service1_title">Localização em Tempo Real</h3>
-                <p data-i18n="service1_text">
-                  Acompanhe em tempo real a localização exacta de todos os
-                  veículos da sua frota, a qualquer hora e em qualquer lugar.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="service-card">
-                <div class="icon-wrapper">
-                  <i class="bi bi-bar-chart-line"></i>
-                </div>
-                <h3 data-i18n="service2_title">Relatórios e Análises</h3>
-                <p data-i18n="service2_text">
-                  Relatórios completos para melhor análise e apoio nas tomadas
-                  de decisões críticas para melhorar a eficiência da frota.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="service-card">
-                <div class="featured-badge">
-                  <i class="bi bi-star-fill"></i>
-                </div>
-                <div class="icon-wrapper">
-                  <i class="bi bi-calendar-check"></i>
-                </div>
-                <h3 data-i18n="service3_title">Reservas Online</h3>
-                <p data-i18n="service3_text">
-                  Sistema de agendamento integrado que permite gerir todas as
-                  reservas de veículos de forma simples e automatizada.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="service-card">
-                <div class="icon-wrapper">
-                  <i class="bi bi-speedometer2"></i>
-                </div>
-                <h3 data-i18n="service4_title">Controlo de Quilometragem</h3>
-                <p data-i18n="service4_text">
-                  Aceda à quilometragem de todos os veículos da sua frota com
-                  poucos cliques e mantenha o histórico actualizado.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="service-card">
-                <div class="icon-wrapper"><i class="bi bi-bell"></i></div>
-                <h3 data-i18n="service5_title">Alertas Automáticos</h3>
-                <p data-i18n="service5_text">
-                  Receba notificações de excesso de velocidade, frenagem brusca,
-                  ignição ligada, vencimento de seguro e muito mais.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="service-card">
-                <div class="icon-wrapper"><i class="bi bi-wallet2"></i></div>
-                <h3 data-i18n="service6_title">Controlo de Gastos</h3>
-                <p data-i18n="service6_text">
-                  Monitorize despesas com multas, abastecimento, manutenções e
-                  outras eventualidades num painel centralizado.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Stats Row -->
-          <div class="stats-row" data-aos="fade-up" data-aos-delay="400">
-            <div class="row g-4 justify-content-center">
-              <div class="col-6 col-md-3">
-                <div class="stat-item">
-                  <span class="stat-number">232K+</span>
-                  <span class="stat-label" data-i18n="stat_label_vehicles"
-                    >Veículos Geridos</span
-                  >
-                </div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="stat-item">
-                  <span class="stat-number">204K+</span>
-                  <span class="stat-label" data-i18n="stat_label_users"
-                    >Utilizadores Activos</span
-                  >
-                </div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="stat-item">
-                  <span class="stat-number">R$ 897K</span>
-                  <span class="stat-label" data-i18n="stat_label_saved"
-                    >Total Economizado</span
-                  >
-                </div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="stat-item">
-                  <span class="stat-number">99.9%</span>
-                  <span class="stat-label" data-i18n="stat_label_uptime"
-                    >Disponibilidade</span
-                  >
                 </div>
               </div>
             </div>
@@ -971,10 +462,10 @@
 
       <section id="portfolio" class="portfolio section">
         <div class="container section-title" data-aos="fade-up">
-          <h2 data-i18n="portfolio_title">Funcionalidades</h2>
-          <p data-i18n="portfolio_sub">
-            Conheça algumas das funcionalidades e projectos desenvolvidos na
-            nossa plataforma.
+          <h2>Funcionalidades</h2>
+          <p>
+            Ferramentas poderosas e fáceis de usar para criar, gerir e fazer
+            crescer a sua loja virtual.
           </p>
         </div>
 
@@ -982,42 +473,26 @@
           <!-- Tabs -->
           <div class="filters-wrapper">
             <ul class="portfolio-filters" id="rsTabs">
-              <li
-                class="rs-tab filter-active"
-                data-tab="controlo"
-                data-i18n="tab_controlo"
-              >
-                Ao Controlo
-              </li>
-              <li class="rs-tab" data-tab="reserva" data-i18n="tab_reserva">
-                Reserva
-              </li>
-              <li class="rs-tab" data-tab="negocio" data-i18n="tab_negocio">
-                O Negócio
-              </li>
-              <li class="rs-tab" data-tab="gestao" data-i18n="tab_gestao">
-                Gestão
-              </li>
-              <li class="rs-tab" data-tab="nuvem" data-i18n="tab_nuvem">
-                Nuvem
-              </li>
+              <li class="rs-tab filter-active" data-tab="controlo">Produtos</li>
+              <li class="rs-tab" data-tab="reserva">Pedidos</li>
+              <li class="rs-tab" data-tab="negocio">Vendas</li>
+              <li class="rs-tab" data-tab="gestao">Gestão</li>
+              <li class="rs-tab" data-tab="nuvem">Nuvem</li>
             </ul>
           </div>
 
           <div class="rentsyst-block mb-5" data-aos="fade-up">
             <div class="rs-content">
-              <!-- Controlo -->
+              <!-- Produtos -->
               <div class="rs-panel active" data-panel="controlo">
                 <div class="row align-items-center g-4">
                   <div class="col-lg-4">
-                    <h2 data-i18n="panel_controlo_title">
-                      Controlo total da sua frota de veículos
-                    </h2>
-                    <p class="fs-6" data-i18n="panel_controlo_text">
-                      O rastreador GPS preciso permite acompanhar todos os
-                      movimentos dos seus veículos. Tenha controlo remoto para
-                      abrir/fechar portas, ligar/bloquear o motor, monitorizar a
-                      velocidade, nível de combustível e outros indicadores.
+                    <h2>Gestão completa do seu catálogo de produtos</h2>
+                    <p class="fs-6">
+                      Cadastre produtos ilimitados com fotos em alta resolução,
+                      descrições detalhadas e controlo de stock automatizado.
+                      Organize por categorias, defina variantes e gerencie
+                      preços com facilidade.
                     </p>
                   </div>
                   <div class="col-lg-8">
@@ -1025,19 +500,19 @@
                       <div class="rs-cf-slide">
                         <img
                           src="assets/img/portfolio/portfolio-1.webp"
-                          alt="Controlo 1"
+                          alt="Produtos 1"
                         />
                       </div>
                       <div class="rs-cf-slide">
                         <img
                           src="assets/img/portfolio/portfolio-2.webp"
-                          alt="Controlo 2"
+                          alt="Produtos 2"
                         />
                       </div>
                       <div class="rs-cf-slide">
                         <img
                           src="assets/img/portfolio/portfolio-3.webp"
-                          alt="Controlo 3"
+                          alt="Produtos 3"
                         />
                       </div>
                     </div>
@@ -1066,18 +541,16 @@
                 </div>
               </div>
 
-              <!-- Reserva -->
+              <!-- Pedidos -->
               <div class="rs-panel" data-panel="reserva">
                 <div class="row align-items-center g-4">
                   <div class="col-lg-4">
-                    <h2 data-i18n="panel_reserva_title">
-                      Trabalho eficiente com pedidos e reservas
-                    </h2>
-                    <p class="fs-6" data-i18n="panel_reserva_text">
-                      As secções de Cronograma e Plano Diário ajudam a
-                      distribuir e gerir pedidos, controlando todas as reservas
-                      em calendário. Delegue tarefas e acompanhe a programação
-                      diária com facilidade.
+                    <h2>Gestão eficiente de pedidos e envios</h2>
+                    <p class="fs-6">
+                      Acompanhe todos os pedidos em tempo real, actualize o
+                      status de cada encomenda e gira envios de forma eficiente.
+                      Notificações automáticas para os seus clientes em cada
+                      etapa.
                     </p>
                   </div>
                   <div class="col-lg-8">
@@ -1085,19 +558,19 @@
                       <div class="rs-cf-slide">
                         <img
                           src="assets/img/portfolio/portfolio-4.webp"
-                          alt="Reserva 1"
+                          alt="Pedidos 1"
                         />
                       </div>
                       <div class="rs-cf-slide">
                         <img
                           src="assets/img/portfolio/portfolio-5.webp"
-                          alt="Reserva 2"
+                          alt="Pedidos 2"
                         />
                       </div>
                       <div class="rs-cf-slide">
                         <img
                           src="assets/img/portfolio/portfolio-6.webp"
-                          alt="Reserva 3"
+                          alt="Pedidos 3"
                         />
                       </div>
                     </div>
@@ -1126,18 +599,16 @@
                 </div>
               </div>
 
-              <!-- O Negócio -->
+              <!-- Vendas -->
               <div class="rs-panel" data-panel="negocio">
                 <div class="row align-items-center g-4">
                   <div class="col-lg-4">
-                    <h2 data-i18n="panel_negocio_title">
-                      Gestão de todos os processos do negócio
-                    </h2>
-                    <p class="fs-6" data-i18n="panel_negocio_text">
-                      Rastreie e controle todas as transacções financeiras —
-                      internas e externas. Optimize o seu tempo, concentre-se
-                      nos resultados e tome decisões com base em dados reais da
-                      sua frota.
+                    <h2>Relatórios e métricas do seu negócio</h2>
+                    <p class="fs-6">
+                      Visualize vendas, receita, produtos mais vendidos e
+                      métricas importantes do seu negócio em dashboards
+                      intuitivos. Tome decisões com base em dados reais e faça
+                      crescer a sua loja.
                     </p>
                   </div>
                   <div class="col-lg-8">
@@ -1145,19 +616,19 @@
                       <div class="rs-cf-slide">
                         <img
                           src="assets/img/portfolio/portfolio-7.webp"
-                          alt="Negócio 1"
+                          alt="Vendas 1"
                         />
                       </div>
                       <div class="rs-cf-slide">
                         <img
                           src="assets/img/portfolio/portfolio-8.webp"
-                          alt="Negócio 2"
+                          alt="Vendas 2"
                         />
                       </div>
                       <div class="rs-cf-slide">
                         <img
                           src="assets/img/portfolio/portfolio-9.webp"
-                          alt="Negócio 3"
+                          alt="Vendas 3"
                         />
                       </div>
                     </div>
@@ -1190,13 +661,11 @@
               <div class="rs-panel" data-panel="gestao">
                 <div class="row align-items-center g-4">
                   <div class="col-lg-4">
-                    <h2 data-i18n="panel_gestao_title">
-                      Planeador competente para a sua frota
-                    </h2>
-                    <p class="fs-6" data-i18n="panel_gestao_text">
-                      Gira o seu tempo com competência. Processe todos os
-                      pedidos, entregue os veículos no prazo e receba alertas
-                      automáticos de manutenção, seguros e revisões.
+                    <h2>Gerencie tudo num só lugar</h2>
+                    <p class="fs-6">
+                      Gira o seu tempo com competência. Controle stock, processe
+                      pedidos, acompanhe clientes e receba alertas automáticos
+                      de stock baixo, pagamentos e avaliações de clientes.
                     </p>
                   </div>
                   <div class="col-lg-8">
@@ -1243,11 +712,12 @@
               <div class="rs-panel" data-panel="nuvem">
                 <div class="row align-items-center g-4">
                   <div class="col-lg-4">
-                    <h2 data-i18n="panel_nuvem_title">Solução 100% em nuvem</h2>
-                    <p class="fs-6" data-i18n="panel_nuvem_text">
-                      Não é necessário instalar nada. Aceda à plataforma de
+                    <h2>Solução 100% em nuvem</h2>
+                    <p class="fs-6">
+                      Não é necessário instalar nada. Aceda à sua loja de
                       qualquer dispositivo, em qualquer lugar do mundo, bastando
-                      ter ligação à Internet.
+                      ter ligação à Internet. Actualizações automáticas e
+                      backups diários incluídos.
                     </p>
                   </div>
                   <div class="col-lg-8">
@@ -1297,23 +767,24 @@
             <div class="cta-content">
               <span class="cta-label">
                 <i class="bi bi-lightning-charge-fill"></i>
-                <span data-i18n="cta_label">Pronto para Começar?</span>
+                <span>Pronto para Começar?</span>
               </span>
-              <h3 data-i18n="cta_title">
-                Gerencie a sua frota com mais controlo e eficiência
+              <h3>
+                Junte-se a milhares de empreendedores que já transformaram os
+                seus negócios
               </h3>
-              <p data-i18n="cta_text">
-                Tenha controlo total dos seus veículos, reservas, manutenção e
-                relatórios numa única plataforma simples, rápida e segura.
+              <p>
+                Comece gratuitamente hoje mesmo. Sem taxas ocultas, sem
+                complexidade. Apenas você e as suas vendas.
               </p>
               <div class="cta-buttons">
-                <a href="#register" class="btn-cta-primary">
-                  <span data-i18n="cta_btn_register"> Registra-se</span>
+                <a href="register.html" class="btn-cta-primary">
+                  <span>Criar Loja Grátis</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
-                <a href="#video" class="btn-cta-secondary">
-                  <i class="bi bi-play-circle"></i>
-                  <span data-i18n="cta_btn_video">Ver Vídeo</span>
+                <a href="#plans" class="btn-cta-secondary">
+                  <i class="bi bi-tag"></i>
+                  <span>Ver Planos</span>
                 </a>
               </div>
             </div>
@@ -1328,145 +799,104 @@
 
       <!-- Pricing Section -->
       <section id="plans" class="pricing section">
-        <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2 data-i18n="plans_title">Planos</h2>
-          <p data-i18n="plans_sub">
-            Escolha o plano ideal para gerir a sua frota com eficiência
-          </p>
+          <h2>Planos</h2>
+          <p>Escolha o plano ideal para fazer crescer a sua loja online</p>
         </div>
-        <!-- End Section Title -->
 
         <div class="container">
           <div class="row gy-4">
             <!-- PLANO BÁSICO -->
             <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
               <div class="pricing-item">
-                <h3 data-i18n="plan1_name">Básico</h3>
-                <h4 class="price">
-                  0 €
-                  <span>/mês</span>
-                </h4>
-
+                <h3>Básico</h3>
+                <h4 class="price">0 kz <span>/mês</span></h4>
                 <ul>
                   <li>
-                    <i class="bi bi-check"></i>
-                    <span data-i18n="plan1_f1">Até 5 veículos</span>
+                    <i class="bi bi-check"></i><span>Até 19 produtos</span>
                   </li>
                   <li>
-                    <i class="bi bi-check"></i>
-                    <span data-i18n="plan1_f2"
-                      >Controle básico de infrações</span
-                    >
+                    <i class="bi bi-check"></i><span>Carrinho de compras</span>
                   </li>
                   <li>
-                    <i class="bi bi-check"></i>
-                    <span data-i18n="plan1_f3">Registo de condutores</span>
+                    <i class="bi bi-check"></i
+                    ><span>Gestão de pedidos básica</span>
                   </li>
                   <li>
-                    <i class="bi bi-check"></i>
-                    <span data-i18n="plan1_f4">Relatórios simples</span>
+                    <i class="bi bi-check"></i><span>Relatórios simples</span>
                   </li>
                   <li class="na">
-                    <i class="bi bi-x"></i>
-                    <span data-i18n="plan1_f5">Suporte prioritário</span>
+                    <i class="bi bi-x"></i><span>Suporte prioritário</span>
                   </li>
                 </ul>
-
-                <a href="#" class="buy-btn" data-i18n="plan1_btn">Começar</a>
+                <a href="register.html" class="buy-btn">Começar Grátis</a>
               </div>
             </div>
-            <!-- End Pricing Item -->
 
             <!-- PLANO PROFISSIONAL -->
             <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
               <div class="pricing-item featured">
-                <h3 data-i18n="plan2_name">Profissional</h3>
-                <h4 data-i18n="plan2_price">15.000 € <span>/mês</span></h4>
-
+                <h3>Profissional</h3>
+                <h4>20 mil kz <span>/mês</span></h4>
                 <ul>
                   <li>
-                    <i class="bi bi-check"></i>
-                    <span data-i18n="plan2_f1">Até 50 veículos</span>
+                    <i class="bi bi-check"></i><span>Produtos ilimitados</span>
                   </li>
                   <li>
-                    <i class="bi bi-check"></i>
-                    <span data-i18n="plan2_f2">Gestão completa de multas</span>
+                    <i class="bi bi-check"></i><span>Relatórios avançados</span>
                   </li>
                   <li>
-                    <i class="bi bi-check"></i>
-                    <span data-i18n="plan2_f3">Relatórios avançados</span>
+                    <i class="bi bi-check"></i
+                    ><span>Múltiplos métodos de pagamento</span>
                   </li>
                   <li>
-                    <i class="bi bi-check"></i>
-                    <span data-i18n="plan2_f4">Histórico detalhado</span>
+                    <i class="bi bi-check"></i
+                    ><span>Domínio personalizado</span>
                   </li>
                   <li>
-                    <i class="bi bi-check"></i>
-                    <span data-i18n="plan2_f5">Suporte prioritário</span>
+                    <i class="bi bi-check"></i><span>Suporte prioritário</span>
                   </li>
                 </ul>
-
-                <a href="#" class="buy-btn" data-i18n="plan2_btn"
-                  >Escolher Plano</a
-                >
+                <a href="register.html" class="buy-btn">Escolher Plano</a>
               </div>
             </div>
-            <!-- End Pricing Item -->
 
             <!-- PLANO EMPRESARIAL -->
             <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
               <div class="pricing-item">
-                <h3 data-i18n="plan3_name">Empresarial</h3>
-                <h4 class="price">
-                  35.000 €
-                  <span>/mês</span>
-                </h4>
-
+                <h3>Empresarial</h3>
+                <h4 class="price">50 mil kz <span>/mês</span></h4>
                 <ul>
                   <li>
-                    <i class="bi bi-check"></i>
-                    <span data-i18n="plan3_f1">Veículos ilimitados</span>
+                    <i class="bi bi-check"></i><span>Múltiplas lojas</span>
+                  </li>
+                  <li><i class="bi bi-check"></i><span>API completa</span></li>
+                  <li>
+                    <i class="bi bi-check"></i
+                    ><span>Integrações avançadas</span>
                   </li>
                   <li>
-                    <i class="bi bi-check"></i>
-                    <span data-i18n="plan3_f2"
-                      >Monitoramento em tempo real</span
-                    >
+                    <i class="bi bi-check"></i><span>Dashboard avançado</span>
                   </li>
                   <li>
-                    <i class="bi bi-check"></i>
-                    <span data-i18n="plan3_f3">Integração com GPS</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span data-i18n="plan3_f4">Dashboard avançado</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check"></i>
-                    <span data-i18n="plan3_f5">Suporte dedicado 24/7</span>
+                    <i class="bi bi-check"></i
+                    ><span>Suporte dedicado 24/7</span>
                   </li>
                 </ul>
-
-                <a href="#" class="buy-btn" data-i18n="plan3_btn"
-                  >Fale Conosco</a
-                >
+                <a href="register.html" class="buy-btn">Fale Connosco</a>
               </div>
             </div>
-            <!-- End Pricing Item -->
           </div>
         </div>
       </section>
-      <!-- /Pricing Section -->
 
       <section id="why-us" class="faq padding-section">
         <div class="container">
           <div class="text-center title-group mb-5">
-            <h3 data-i18n="faq_title">Dúvidas Frequentes</h3>
+            <h3>Dúvidas Frequentes</h3>
             <hr class="divisor" />
-            <p data-i18n="faq_sub">
-              Ainda tem dúvida sobre o RentoGoo? Veja algumas dúvidas mais
-              comuns:
+            <p>
+              Ainda tem dúvidas sobre a Avesell? Veja as perguntas mais comuns:
             </p>
           </div>
 
@@ -1476,7 +906,6 @@
               data-aos="fade-left"
             >
               <div class="accordion w-100" id="accordionFaq">
-                <!-- ITEM 1 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button
@@ -1485,9 +914,9 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseOne"
                     >
-                      <span data-i18n="faq1_q"
-                        >O sistema consegue identificar o condutor responsável
-                        pela multa?</span
+                      <span
+                        >Preciso de conhecimentos técnicos para criar a minha
+                        loja?</span
                       >
                     </button>
                   </h2>
@@ -1496,95 +925,15 @@
                     class="accordion-collapse collapse show"
                     data-bs-parent="#accordionFaq"
                   >
-                    <div class="accordion-body" data-i18n="faq1_a">
-                      Durante o cadastro da infração, o sistema faz uma leitura
-                      do banco de dados das viagens cadastradas pelos
-                      condutores, identificando quem é responsável pela infração
-                      naquele determinado horário e dia.
+                    <div class="accordion-body">
+                      Não. A Avesell foi desenvolvida para que qualquer pessoa
+                      possa criar e gerir a sua loja online sem nenhum
+                      conhecimento técnico. A interface é intuitiva e o processo
+                      de configuração leva apenas alguns minutos.
                     </div>
                   </div>
                 </div>
 
-                <!-- ITEM 2 -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                    >
-                      <span data-i18n="faq2_q"
-                        >Posso cadastrar vários veículos?</span
-                      >
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFaq"
-                  >
-                    <div class="accordion-body" data-i18n="faq2_a">
-                      Sim, o sistema permite o cadastro de múltiplos veículos
-                      para melhor gestão da frota.
-                    </div>
-                  </div>
-                </div>
-
-                <!-- ITEM 3 -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                    >
-                      <span data-i18n="faq3_q"
-                        >O sistema funciona em tempo real?</span
-                      >
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFaq"
-                  >
-                    <div class="accordion-body" data-i18n="faq3_a">
-                      Sim, todas as informações são atualizadas em tempo real,
-                      permitindo um controle eficiente.
-                    </div>
-                  </div>
-                </div>
-
-                <!-- ITEM 4 -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFour"
-                    >
-                      <span data-i18n="faq4_q"
-                        >Posso aceder à plataforma pelo telemóvel?</span
-                      >
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFour"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFaq"
-                  >
-                    <div class="accordion-body" data-i18n="faq4_a">
-                      Sim, a plataforma é totalmente responsiva e acessível em
-                      qualquer dispositivo — computador, tablet ou telemóvel —
-                      bastando ter ligação à Internet.
-                    </div>
-                  </div>
-                </div>
-
-                <!-- ITEM 5 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button
@@ -1593,9 +942,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseFive"
                     >
-                      <span data-i18n="faq5_q"
-                        >Como funciona o período de teste gratuito?</span
-                      >
+                      <span>Como funciona o período de teste gratuito?</span>
                     </button>
                   </h2>
                   <div
@@ -1603,15 +950,14 @@
                     class="accordion-collapse collapse"
                     data-bs-parent="#accordionFaq"
                   >
-                    <div class="accordion-body" data-i18n="faq5_a">
-                      Oferecemos 14 dias de teste gratuito sem necessidade de
+                    <div class="accordion-body">
+                      Oferecemos 15 dias de teste gratuito sem necessidade de
                       cartão de crédito. Durante esse período tem acesso a todas
                       as funcionalidades do plano escolhido.
                     </div>
                   </div>
                 </div>
 
-                <!-- ITEM 6 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button
@@ -1620,9 +966,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseSix"
                     >
-                      <span data-i18n="faq6_q"
-                        >Os meus dados estão seguros na plataforma?</span
-                      >
+                      <span>Os dados da minha loja estão seguros?</span>
                     </button>
                   </h2>
                   <div
@@ -1630,15 +974,15 @@
                     class="accordion-collapse collapse"
                     data-bs-parent="#accordionFaq"
                   >
-                    <div class="accordion-body" data-i18n="faq6_a">
-                      Sim, utilizamos encriptação SSL em todas as comunicações e
-                      os dados são armazenados em servidores seguros com backups
+                    <div class="accordion-body">
+                      Sim, utilizamos protecção SSL, encriptação de dados e
+                      conformidade com padrões de segurança internacionais. Os
+                      dados são armazenados em servidores seguros com backups
                       automáticos diários.
                     </div>
                   </div>
                 </div>
 
-                <!-- ITEM 7 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button
@@ -1647,7 +991,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseSeven"
                     >
-                      <span data-i18n="faq7_q"
+                      <span
                         >Posso integrar a plataforma com outros sistemas?</span
                       >
                     </button>
@@ -1657,15 +1001,14 @@
                     class="accordion-collapse collapse"
                     data-bs-parent="#accordionFaq"
                   >
-                    <div class="accordion-body" data-i18n="faq7_a">
+                    <div class="accordion-body">
                       Sim, disponibilizamos uma API completa que permite
-                      integrar a plataforma com ERP, sistemas de faturação, GPS
-                      externos e outros softwares de gestão.
+                      integrar a plataforma com ERP, sistemas de facturação,
+                      transportadoras e outros softwares de gestão.
                     </div>
                   </div>
                 </div>
 
-                <!-- ITEM 8 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button
@@ -1674,9 +1017,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseEight"
                     >
-                      <span data-i18n="faq8_q"
-                        >Como posso cancelar a minha subscrição?</span
-                      >
+                      <span>Como posso cancelar a minha subscrição?</span>
                     </button>
                   </h2>
                   <div
@@ -1684,16 +1025,15 @@
                     class="accordion-collapse collapse"
                     data-bs-parent="#accordionFaq"
                   >
-                    <div class="accordion-body" data-i18n="faq8_a">
+                    <div class="accordion-body">
                       Pode cancelar a sua subscrição a qualquer momento
-                      diretamente nas definições da conta, sem qualquer
+                      directamente nas definições da conta, sem qualquer
                       penalização. Os dados ficam disponíveis por 30 dias após o
                       cancelamento.
                     </div>
                   </div>
                 </div>
 
-                <!-- ITEM 9 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button
@@ -1702,9 +1042,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseNine"
                     >
-                      <span data-i18n="faq9_q"
-                        >Quantos utilizadores posso adicionar à minha
-                        conta?</span
+                      <span
+                        >Quantos produtos posso adicionar à minha loja?</span
                       >
                     </button>
                   </h2>
@@ -1713,15 +1052,14 @@
                     class="accordion-collapse collapse"
                     data-bs-parent="#accordionFaq"
                   >
-                    <div class="accordion-body" data-i18n="faq9_a">
-                      No plano Starter pode adicionar até 5 utilizadores. No
-                      plano Profissional até 20 e no plano Empresarial o número
-                      de utilizadores é ilimitado.
+                    <div class="accordion-body">
+                      No plano Básico pode adicionar até 19 produtos. No plano
+                      Profissional e Empresarial o número de produtos é
+                      ilimitado.
                     </div>
                   </div>
                 </div>
 
-                <!-- ITEM 10 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button
@@ -1730,9 +1068,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseTen"
                     >
-                      <span data-i18n="faq10_q"
-                        >O suporte técnico está disponível em português?</span
-                      >
+                      <span>O suporte técnico está disponível ?</span>
                     </button>
                   </h2>
                   <div
@@ -1740,263 +1076,12 @@
                     class="accordion-collapse collapse"
                     data-bs-parent="#accordionFaq"
                   >
-                    <div class="accordion-body" data-i18n="faq10_a">
-                      Sim, o nosso suporte técnico está disponível em português
-                      e inglês, por email e chat, de segunda a sexta das 9h às
-                      18h. O plano Empresarial inclui suporte dedicado 24/7.
+                    <div class="accordion-body">
+                      Sim, o nosso suporte técnico está disponível , por email.
+                      O plano Empresarial inclui suporte dedicado 24/7.
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="testimonials" class="testimonials section">
-        <div class="container section-title" data-aos="fade-up">
-          <h2 data-i18n="testimonials_title">Depoimentos</h2>
-          <p data-i18n="testimonials_sub">
-            Veja o que nossos clientes dizem sobre nossos serviços e
-            experiências conosco
-          </p>
-        </div>
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row">
-            <!-- Sidebar Esquerda -->
-            <div class="col-lg-4" data-aos="fade-right" data-aos-delay="150">
-              <div class="testimonials-sidebar">
-                <div class="avatar-stack">
-                  <img
-                    src="assets/img/person/person-m-3.webp"
-                    alt="Cliente satisfeito"
-                    class="avatar"
-                    loading="lazy"
-                  />
-                  <img
-                    src="assets/img/person/person-f-7.webp"
-                    alt="Cliente satisfeito"
-                    class="avatar"
-                    loading="lazy"
-                  />
-                  <img
-                    src="assets/img/person/person-m-9.webp"
-                    alt="Cliente satisfeito"
-                    class="avatar"
-                    loading="lazy"
-                  />
-                  <img
-                    src="assets/img/person/person-f-4.webp"
-                    alt="Cliente satisfeito"
-                    class="avatar"
-                    loading="lazy"
-                  />
-                  <span class="avatar-count">+2.5k</span>
-                </div>
-                <div class="sidebar-content">
-                  <span class="satisfied-badge">
-                    <i class="bi bi-heart-fill"></i>
-                    <span data-i18n="testimonials_badge"
-                      >Clientes Satisfeitos</span
-                    >
-                  </span>
-                  <h3 data-i18n="testimonials_sidebar_title">
-                    Descubra o que nossos clientes dizem sobre nós
-                  </h3>
-                  <p data-i18n="testimonials_sidebar_text">
-                    Trabalhamos para oferecer sempre a melhor experiência,
-                    garantindo qualidade, eficiência e satisfação em cada
-                    serviço prestado.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slider -->
-            <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
-              <div class="testimonials-carousel swiper">
-                <div class="swiper-wrapper">
-                  <!-- Depoimento 1 -->
-                  <div class="swiper-slide">
-                    <div class="testimonial-card">
-                      <div class="card-top">
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i
-                          ><i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i
-                          ><i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                        </div>
-                        <span class="quote-mark"
-                          ><i class="bi bi-quote"></i
-                        ></span>
-                      </div>
-                      <p class="testimonial-text" data-i18n="testimonial1_text">
-                        Excelente sistema! Facilitou muito a gestão da nossa
-                        frota e o controle de infrações.
-                      </p>
-                      <div class="author-info">
-                        <img
-                          src="assets/img/person/person-f-2.webp"
-                          alt="Cliente"
-                          class="author-img"
-                          loading="lazy"
-                        />
-                        <div class="author-details">
-                          <h5 data-i18n="testimonial1_name">Sophia Anderson</h5>
-                          <span data-i18n="testimonial1_role"
-                            >Diretora de Marketing</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Depoimento 2 -->
-                  <div class="swiper-slide">
-                    <div class="testimonial-card">
-                      <div class="card-top">
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i
-                          ><i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i
-                          ><i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                        </div>
-                        <span class="quote-mark"
-                          ><i class="bi bi-quote"></i
-                        ></span>
-                      </div>
-                      <p class="testimonial-text" data-i18n="testimonial2_text">
-                        Plataforma muito intuitiva e eficiente. Recomendo para
-                        qualquer empresa que queira organização.
-                      </p>
-                      <div class="author-info">
-                        <img
-                          src="assets/img/person/person-m-5.webp"
-                          alt="Cliente"
-                          class="author-img"
-                          loading="lazy"
-                        />
-                        <div class="author-details">
-                          <h5 data-i18n="testimonial2_name">Marcus Webb</h5>
-                          <span data-i18n="testimonial2_role"
-                            >Líder Técnico</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Depoimento 3 -->
-                  <div class="swiper-slide">
-                    <div class="testimonial-card">
-                      <div class="card-top">
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i
-                          ><i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i
-                          ><i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                        </div>
-                        <span class="quote-mark"
-                          ><i class="bi bi-quote"></i
-                        ></span>
-                      </div>
-                      <p class="testimonial-text" data-i18n="testimonial3_text">
-                        Uma solução completa que melhorou bastante nossos
-                        processos internos.
-                      </p>
-                      <div class="author-info">
-                        <img
-                          src="assets/img/person/person-f-6.webp"
-                          alt="Cliente"
-                          class="author-img"
-                          loading="lazy"
-                        />
-                        <div class="author-details">
-                          <h5 data-i18n="testimonial3_name">Elena Rodriguez</h5>
-                          <span data-i18n="testimonial3_role"
-                            >Fundadora de Startup</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Depoimento 4 -->
-                  <div class="swiper-slide">
-                    <div class="testimonial-card">
-                      <div class="card-top">
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i
-                          ><i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i
-                          ><i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                        </div>
-                        <span class="quote-mark"
-                          ><i class="bi bi-quote"></i
-                        ></span>
-                      </div>
-                      <p class="testimonial-text" data-i18n="testimonial4_text">
-                        Interface moderna e fácil de usar. Atendimento
-                        excelente.
-                      </p>
-                      <div class="author-info">
-                        <img
-                          src="assets/img/person/person-m-7.webp"
-                          alt="Cliente"
-                          class="author-img"
-                          loading="lazy"
-                        />
-                        <div class="author-details">
-                          <h5 data-i18n="testimonial4_name">James Mitchell</h5>
-                          <span data-i18n="testimonial4_role"
-                            >Designer de Produto</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Depoimento 5 -->
-                  <div class="swiper-slide">
-                    <div class="testimonial-card">
-                      <div class="card-top">
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i
-                          ><i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i
-                          ><i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                        </div>
-                        <span class="quote-mark"
-                          ><i class="bi bi-quote"></i
-                        ></span>
-                      </div>
-                      <p class="testimonial-text" data-i18n="testimonial5_text">
-                        Sistema confiável e muito útil para o dia a dia da
-                        empresa.
-                      </p>
-                      <div class="author-info">
-                        <img
-                          src="assets/img/person/person-f-8.webp"
-                          alt="Cliente"
-                          class="author-img"
-                          loading="lazy"
-                        />
-                        <div class="author-details">
-                          <h5 data-i18n="testimonial5_name">Olivia Chen</h5>
-                          <span data-i18n="testimonial5_role"
-                            >Gerente de Operações</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
               </div>
             </div>
           </div>
@@ -2005,29 +1090,26 @@
 
       <section id="contact" class="contact section">
         <div class="container section-title" data-aos="fade-up">
-          <h2 data-i18n="contact_title">Contato</h2>
-          <p data-i18n="contact_sub">
-            Entre em contato conosco e descubra como podemos ajudar você a
-            alcançar seus objetivos
+          <h2>Contato</h2>
+          <p>
+            Entre em contacto connosco e descubra como podemos ajudar a fazer
+            crescer o seu negócio online
           </p>
         </div>
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-5 align-items-stretch">
-            <!-- Painel de Informações -->
             <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
               <div class="info-panel">
                 <div class="panel-header">
                   <span class="section-badge">
                     <i class="bi bi-chat-dots-fill"></i>
-                    <span data-i18n="contact_badge">Fale Conosco</span>
+                    <span>Fale Connosco</span>
                   </span>
-                  <h3 data-i18n="contact_heading">
-                    Vamos transformar sua ideia em realidade
-                  </h3>
-                  <p data-i18n="contact_desc">
-                    Nossa equipe está pronta para ajudar você com soluções
-                    eficientes e personalizadas.
+                  <h3>Vamos fazer crescer o seu negócio online</h3>
+                  <p>
+                    A nossa equipa está pronta para ajudar com soluções
+                    eficientes e personalizadas para a sua loja.
                   </p>
                 </div>
 
@@ -2037,21 +1119,17 @@
                       <i class="bi bi-envelope-paper-fill"></i>
                     </div>
                     <div class="method-details">
-                      <span class="method-label" data-i18n="contact_label_email"
-                        >Email</span
-                      >
-                      <a href="mailto:support@example.com"
-                        >support@example.com</a
+                      <span class="method-label">Email</span>
+                      <a href="mailto:suporte@avesell.com"
+                        >suporte@avesell.com</a
                       >
                     </div>
                   </div>
                   <div class="method-item">
                     <div class="method-icon"><i class="bi bi-headset"></i></div>
                     <div class="method-details">
-                      <span class="method-label" data-i18n="contact_label_phone"
-                        >Telefone</span
-                      >
-                      <a href="tel:+15558901234">+1 (555) 890-1234</a>
+                      <span class="method-label">Telefone</span>
+                      <a href="tel:+351210000000">+351 210 000 000</a>
                     </div>
                   </div>
                   <div class="method-item">
@@ -2059,71 +1137,35 @@
                       <i class="bi bi-pin-map-fill"></i>
                     </div>
                     <div class="method-details">
-                      <span
-                        class="method-label"
-                        data-i18n="contact_label_address"
-                        >Endereço</span
-                      >
-                      <span>1847 Oak Avenue, Portland, OR 97201</span>
+                      <span class="method-label">Endereço</span>
+                      <span>Luanda, Angola</span>
                     </div>
-                  </div>
-                </div>
-
-                <div class="stats-strip">
-                  <div class="stat-item">
-                    <span class="stat-number">98%</span>
-                    <span class="stat-text" data-i18n="contact_stat1"
-                      >Satisfação</span
-                    >
-                  </div>
-                  <div class="stat-item">
-                    <span class="stat-number">24/7</span>
-                    <span class="stat-text" data-i18n="contact_stat2"
-                      >Suporte</span
-                    >
-                  </div>
-                  <div class="stat-item">
-                    <span class="stat-number">3.2k</span>
-                    <span class="stat-text" data-i18n="contact_stat3"
-                      >Projetos</span
-                    >
-                  </div>
-                </div>
-
-                <div class="social-connect">
-                  <span data-i18n="contact_follow">Siga-nos</span>
-                  <div class="social-icons">
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Formulário -->
             <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
               <div class="form-card">
                 <div class="form-card-header">
                   <div class="header-icon"><i class="bi bi-send-fill"></i></div>
                   <div class="header-text">
-                    <h4 data-i18n="contact_form_title">Envie uma Mensagem</h4>
-                    <p data-i18n="contact_form_sub">
+                    <h4>Envie uma Mensagem</h4>
+                    <p>
                       Preencha o formulário e responderemos em até 24 horas.
                     </p>
                   </div>
                 </div>
 
                 <form
-                  action="forms/contact.php"
+                  action="api/email.php"
                   method="post"
                   class="php-email-form"
                 >
                   <div class="row g-4">
                     <div class="col-md-6">
                       <div class="input-group-custom">
-                        <label data-i18n="contact_field_name">Seu Nome</label>
+                        <label>Seu Nome</label>
                         <div class="input-wrapper">
                           <i class="bi bi-person"></i>
                           <input
@@ -2135,10 +1177,9 @@
                         </div>
                       </div>
                     </div>
-
                     <div class="col-md-6">
                       <div class="input-group-custom">
-                        <label data-i18n="contact_field_email">Email</label>
+                        <label>Email</label>
                         <div class="input-wrapper">
                           <i class="bi bi-envelope"></i>
                           <input
@@ -2150,10 +1191,9 @@
                         </div>
                       </div>
                     </div>
-
                     <div class="col-12">
                       <div class="input-group-custom">
-                        <label data-i18n="contact_field_subject">Assunto</label>
+                        <label>Assunto</label>
                         <div class="input-wrapper">
                           <i class="bi bi-chat-square-text"></i>
                           <input
@@ -2165,40 +1205,34 @@
                         </div>
                       </div>
                     </div>
-
                     <div class="col-12">
                       <div class="input-group-custom">
-                        <label data-i18n="contact_field_message"
-                          >Sua Mensagem</label
-                        >
+                        <label>Sua Mensagem</label>
                         <div class="input-wrapper textarea-wrapper">
                           <i class="bi bi-pencil-square"></i>
                           <textarea
                             name="message"
                             rows="5"
-                            placeholder="Descreva sua necessidade..."
+                            placeholder="Descreva a sua necessidade..."
                             required
                           ></textarea>
                         </div>
                       </div>
                     </div>
                   </div>
-
                   <div class="form-actions">
                     <div class="loading">Carregando</div>
                     <div class="error-message"></div>
-                    <div class="sent-message" data-i18n="contact_sent">
-                      Sua mensagem foi enviada com sucesso. Obrigado!
+                    <div class="sent-message">
+                      A sua mensagem foi enviada com sucesso. Obrigado!
                     </div>
                     <button type="submit" class="btn-submit">
-                      <span data-i18n="contact_btn_send">Enviar Mensagem</span>
+                      <span>Enviar Mensagem</span>
                       <i class="bi bi-arrow-right-circle-fill"></i>
                     </button>
                     <div class="secure-note">
                       <i class="bi bi-lock-fill"></i>
-                      <span data-i18n="contact_secure"
-                        >Seus dados estão seguros e protegidos</span
-                      >
+                      <span>Os seus dados estão seguros e protegidos</span>
                     </div>
                   </div>
                 </form>
@@ -2214,23 +1248,18 @@
         <div
           class="footer-top d-flex justify-content-between align-items-center flex-wrap"
         >
-          <!-- Logo -->
           <div class="footer-left">
             <a href="index.html" class="logo">
-              <span class="sitename">RentoGoo</span>
+              <span class="sitename">Avesell</span>
             </a>
           </div>
-
-          <!-- Links -->
           <div class="footer-links d-flex gap-4">
-            <a href="#about" data-i18n="footer_about">Sobre</a>
-            <a href="#faq" data-i18n="footer_faq">FAQ</a>
-            <a href="#contact" data-i18n="footer_contact">Contactos</a>
-            <a href="#" data-i18n="footer_privacy">Política de Privacidade</a>
-            <a href="#" data-i18n="footer_terms">Termos e Condições</a>
+            <a href="#about">Sobre</a>
+            <a href="#why-us">FAQ</a>
+            <a href="#contact">Contactos</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos e Condições</a>
           </div>
-
-          <!-- Social -->
           <div class="social-links d-flex gap-3">
             <a href="#"><i class="bi bi-facebook"></i></a>
             <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -2242,7 +1271,6 @@
         <div
           class="footer-bottom d-flex justify-content-between align-items-center flex-wrap"
         >
-          <!-- Idioma -->
           <div class="lang-dropdown" id="langDropdown">
             <button class="choose-lang" id="langToggle">
               <img src="https://flagcdn.com/w20/pt.png" id="currentFlag" />
@@ -2250,20 +1278,16 @@
               <i class="bi bi-chevron-down"></i>
             </button>
             <div class="lang-menu">
-              <a href="#" data-lang="pt">
-                <img src="https://flagcdn.com/w20/pt.png" /> Português
-              </a>
-              <a href="#" data-lang="en">
-                <img src="https://flagcdn.com/w20/gb.png" /> English
-              </a>
+              <a href="#" data-lang="pt"
+                ><img src="https://flagcdn.com/w20/pt.png" /> Português</a
+              >
+              <a href="#" data-lang="en"
+                ><img src="https://flagcdn.com/w20/gb.png" /> English</a
+              >
             </div>
           </div>
-
-          <!-- Copyright -->
           <div class="footer-legal text-end">
-            <small data-i18n="footer_copy"
-              >© 2026 RentoGoo. Todos os direitos reservados.</small
-            >
+            <small>© 2026 Avesell. Todos os direitos reservados.</small>
           </div>
         </div>
       </div>
@@ -2274,8 +1298,9 @@
       href="#"
       id="scroll-top"
       class="scroll-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+    >
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
 
     <!-- Preloader -->
     <div id="preloader"></div>
@@ -2294,7 +1319,8 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/portf.js"></script>
-    <script src="assets/js/idioma.js"></script>
+    <script src="assets/js/form.js"></script>
     <script src="assets/js/depoi.js"></script>
+    <script src="assets/js/slide.js"></script>
   </body>
 </html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registar — RentoGoo</title>
+    <title>Registar — Avesell</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap"
       rel="stylesheet"
@@ -18,51 +18,51 @@
   <body>
     <!-- Visual esquerdo -->
     <div class="auth-visual">
-      <a href="index.html" class="visual-logo">RentoGoo</a>
+      <a href="index.html" class="visual-logo">Avesell</a>
 
       <div class="visual-content">
         <h2>
-          Comece a gerir a sua frota<br />
-          de forma inteligente
+          Comece a vender online<br />
+          de forma simples e rápida
         </h2>
 
         <p>
-          Crie a sua conta gratuita e tenha acesso a uma plataforma completa de
-          gestão de veículos, relatórios e controlo operacional.
+          Crie a sua loja gratuita e tenha acesso a uma plataforma completa de
+          gestão de produtos, pedidos e relatórios de vendas.
         </p>
 
-        <!-- Stats leves (opcional) -->
+        <!-- Stats -->
         <div class="visual-stats">
           <div class="vs-item">
-            <div class="vs-num">204K+</div>
-            <div class="vs-label">Utilizadores activos</div>
+            <div class="vs-num">10K+</div>
+            <div class="vs-label">Lojas activas</div>
           </div>
 
           <div class="vs-item">
-            <div class="vs-num">+30%</div>
-            <div class="vs-label">Eficiência operacional</div>
+            <div class="vs-num">500K+</div>
+            <div class="vs-label">Clientes atendidos</div>
           </div>
 
           <div class="vs-item">
-            <div class="vs-num">24/7</div>
-            <div class="vs-label">Suporte disponível</div>
+            <div class="vs-num">99.9%</div>
+            <div class="vs-label">Uptime garantido</div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- Form direito -->
     <div class="auth-form-panel">
       <div class="auth-form-wrap">
         <div class="form-header">
-          <h1>Criar conta gratuita</h1>
-          <p>Já tem conta? <a href="login.html">Entrar</a></p>
+          <h1>Criar conta</h1>
+          <p>Já tem conta? <a href="/login.php">Entrar</a></p>
         </div>
 
         <!-- Barra de progresso -->
         <div class="steps-bar">
           <div class="step-bar-item active" id="bar1"></div>
           <div class="step-bar-item" id="bar2"></div>
-          <div class="step-bar-item" id="bar3"></div>
         </div>
 
         <form id="registerForm" novalidate>
@@ -75,19 +75,19 @@
                   >Nome da Empresa <span class="required">*</span></label
                 >
                 <div class="input-wrap">
-                  <i class="bi bi-building input-icon"></i>
+                  <i class="bi bi-shop input-icon"></i>
                   <input
                     type="text"
                     id="company"
                     class="form-input"
-                    placeholder="Ex: Transportes Ltda"
+                    placeholder="Ex: Minha Loja"
                   />
                 </div>
               </div>
 
               <div class="form-group full">
                 <label class="form-label" for="nif"
-                  >NIF / CNPJ <span class="required">*</span></label
+                  >NIF / NIPC <span class="required">*</span></label
                 >
                 <div class="input-wrap">
                   <i class="bi bi-file-text input-icon"></i>
@@ -95,25 +95,25 @@
                     type="text"
                     id="nif"
                     class="form-input"
-                    placeholder="000.000.000-00"
+                    placeholder="000.000.000"
                   />
                 </div>
               </div>
 
               <div class="form-group">
                 <label class="form-label" for="sector"
-                  >Sector de Actividade <span class="required">*</span></label
+                  >Categoria da Loja <span class="required">*</span></label
                 >
                 <div class="input-wrap">
-                  <i class="bi bi-briefcase input-icon"></i>
+                  <i class="bi bi-tag input-icon"></i>
                   <select id="sector" class="form-input">
                     <option value="">Seleccionar...</option>
-                    <option>Aluguer de Veículos</option>
-                    <option>Logística e Transportes</option>
-                    <option>Construção e Obras</option>
-                    <option>Serviços de Saúde</option>
-                    <option>Distribuição</option>
-                    <option>Telecomunicações</option>
+                    <option>Moda e Vestuário</option>
+                    <option>Electrónica e Tecnologia</option>
+                    <option>Alimentação e Bebidas</option>
+                    <option>Casa e Decoração</option>
+                    <option>Beleza e Cuidado Pessoal</option>
+                    <option>Desporto e Lazer</option>
                     <option>Outro</option>
                   </select>
                 </div>
@@ -139,7 +139,7 @@
 
               <div class="form-group full">
                 <label class="form-label" for="phone"
-                  >Telefone da Empresa <span class="required">*</span></label
+                  >Telefone de Contacto <span class="required">*</span></label
                 >
                 <div class="input-wrap">
                   <i class="bi bi-telephone input-icon"></i>
@@ -162,7 +162,7 @@
 
           <!-- ── PASSO 2: Dados do Responsável ── -->
           <div class="form-section" id="step2">
-            <div class="section-title">Responsável de Frota</div>
+            <div class="section-title">Dados do Responsável</div>
             <div class="form-grid">
               <div class="form-group">
                 <label class="form-label" for="firstName"
@@ -215,10 +215,10 @@
                   <i class="bi bi-person-badge input-icon"></i>
                   <select id="role" class="form-input">
                     <option value="">Seleccionar (opcional)</option>
-                    <option>Gestor de Frota</option>
-                    <option>Director de Operações</option>
-                    <option>Administrador</option>
-                    <option>Responsável de Logística</option>
+                    <option>Proprietário</option>
+                    <option>Director Comercial</option>
+                    <option>Gestor de Loja</option>
+                    <option>Responsável de Marketing</option>
                     <option>Outro</option>
                   </select>
                 </div>
@@ -275,91 +275,21 @@
               </div>
             </div>
 
-            <div class="form-nav">
-              <button type="button" class="btn-back" onclick="goStep(1)">
-                <i class="bi bi-arrow-left"></i> Voltar
-              </button>
-              <button type="button" class="btn-next" onclick="goStep(3)">
-                Continuar <i class="bi bi-arrow-right"></i>
-              </button>
-            </div>
-          </div>
-
-          <!-- ── PASSO 3: Plano + Frota ── -->
-          <div class="form-section" id="step3">
-            <div class="section-title">Plano e Frota</div>
-
-            <div style="margin-bottom: 24px">
-              <label class="form-label" style="margin-bottom: 12px"
-                >Escolha o seu plano <span class="required">*</span></label
-              >
-              <div class="plan-cards">
-                <div
-                  class="plan-card-option selected"
-                  onclick="selectPlan(this, 'starter')"
-                >
-                  <input type="radio" name="plan" value="starter" checked />
-                  <div class="pco-name">Starter</div>
-                  <div class="pco-price">
-                    R$ <strong>49,90</strong> / veículo
-                  </div>
-                  <div class="pco-check"><i class="bi bi-check"></i></div>
-                </div>
-                <div
-                  class="plan-card-option"
-                  onclick="selectPlan(this, 'elite')"
-                >
-                  <input type="radio" name="plan" value="elite" />
-                  <div class="pco-name">Elite</div>
-                  <div class="pco-price">
-                    R$ <strong>109,90</strong> / veículo
-                  </div>
-                  <div class="pco-check"><i class="bi bi-check"></i></div>
-                </div>
-              </div>
-            </div>
-
-            <div style="margin-bottom: 24px">
-              <label class="form-label" style="margin-bottom: 12px"
-                >Número estimado de veículos</label
-              >
-              <div class="vehicle-counter">
-                <button
-                  type="button"
-                  class="vc-btn"
-                  onclick="changeVehicles(-5)"
-                >
-                  −
-                </button>
-                <div>
-                  <div class="vc-value" id="vehicleCount">5</div>
-                  <div class="vc-label">veículos</div>
-                </div>
-                <button
-                  type="button"
-                  class="vc-btn"
-                  onclick="changeVehicles(5)"
-                >
-                  +
-                </button>
-              </div>
-            </div>
-
-            <div class="terms-check">
+            <div class="terms-check mt-10">
               <input type="checkbox" id="terms" />
               <label for="terms">
                 Aceito os <a href="#">Termos de Serviço</a> e a
-                <a href="#">Política de Privacidade</a>. Compreendo que terei 14
+                <a href="#">Política de Privacidade</a>. Compreendo que terei 15
                 dias de teste gratuito.
               </label>
             </div>
 
             <div class="form-nav">
-              <button type="button" class="btn-back" onclick="goStep(2)">
+              <button type="button" class="btn-back" onclick="goStep(1)">
                 <i class="bi bi-arrow-left"></i> Voltar
               </button>
-              <button type="submit" class="btn-submit">
-                <i class="bi bi-rocket-takeoff"></i> Criar Conta Grátis
+              <button type="submit" class="btn-next">
+                Criar Loja <i class="bi bi-arrow-right"></i>
               </button>
             </div>
           </div>
@@ -369,7 +299,6 @@
 
     <script>
       let currentStep = 1;
-      let vehicleCount = 5;
 
       function goStep(step) {
         document
@@ -378,26 +307,12 @@
         currentStep = step;
         document.getElementById(`step${currentStep}`).classList.add("active");
 
-        // Actualizar barra
-        for (let i = 1; i <= 3; i++) {
+        for (let i = 1; i <= 2; i++) {
           const bar = document.getElementById(`bar${i}`);
           bar.classList.remove("active", "done");
           if (i < step) bar.classList.add("done");
           else if (i === step) bar.classList.add("active");
         }
-      }
-
-      function selectPlan(el, plan) {
-        document
-          .querySelectorAll(".plan-card-option")
-          .forEach((c) => c.classList.remove("selected"));
-        el.classList.add("selected");
-        el.querySelector("input").checked = true;
-      }
-
-      function changeVehicles(delta) {
-        vehicleCount = Math.max(5, vehicleCount + delta);
-        document.getElementById("vehicleCount").textContent = vehicleCount;
       }
 
       function togglePassword(id, btn) {
@@ -447,8 +362,9 @@
             alert("Por favor aceite os Termos de Serviço para continuar.");
             return;
           }
-          alert("Conta criada com sucesso! A redirecionar para o painel...");
+          alert("Loja criada com sucesso! A redirecionar para o painel...");
         });
     </script>
+    <script src="form.js"></script>
   </body>
 </html>
