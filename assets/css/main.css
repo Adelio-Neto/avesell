@@ -6968,7 +6968,7 @@ section,
 
 .rs-coverflow {
   position: relative;
-  height: 380px; /* aumentado de 300px */
+  height: 380px;
   perspective: 900px;
   overflow: hidden;
   cursor: grab;
@@ -6983,7 +6983,8 @@ section,
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 80%; /* aumentado de 70% */
+  width: 80%;
+  height: 320px; /* altura explícita para o transform funcionar */
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 10px 36px rgba(0, 0, 0, 0.16);
@@ -6993,7 +6994,7 @@ section,
 
 .rs-cf-slide img {
   width: 100%;
-  height: 320px; /* aumentado de 240px */
+  height: 100%; /* ocupa toda a altura do slide */
   object-fit: cover;
   display: block;
   -webkit-user-drag: none;
@@ -7004,6 +7005,33 @@ section,
   pointer-events: auto;
   box-shadow: 0 20px 56px
     color-mix(in srgb, var(--accent-color) 22%, transparent);
+  cursor: zoom-in; /* indica que é clicável para expandir */
+}
+
+/* Ícone de expandir no slide ativo */
+.rs-cf-slide.is-active::after {
+  content: "\F52A"; /* bootstrap-icons expand */
+  font-family: "bootstrap-icons";
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  line-height: 32px;
+  text-align: center;
+}
+.rs-cf-slide.is-active:hover::after {
+  opacity: 1;
 }
 
 .rs-cf-controls {
@@ -7072,142 +7100,153 @@ section,
 /* RESPONSIVO */
 @media (max-width: 768px) {
   .rs-coverflow {
-    height: 280px; /* antes 220px */
-  }
-  .rs-cf-slide img {
-    height: 240px; /* antes 180px */
+    height: 260px;
   }
   .rs-cf-slide {
-    width: 85%; /* antes 78% */
+    width: 88%;
+    height: 220px; /* altura explícita no mobile */
   }
-} /* ── Secção ── */
-.features-slider-section {
-  padding: 60px 0 70px;
-  background: var(--surface-color, #fff);
-  overflow: hidden;
+  /* img herda height:100% do slide, não precisa de valor fixo */
 }
 
-.fsl-viewport {
-  overflow: hidden;
-  cursor: grab;
-  user-select: none;
-  -webkit-user-select: none;
-  padding: 10px 0 20px;
-}
-.fsl-viewport:active {
-  cursor: grabbing;
-}
+/* ══════════════════════════════════════════════
+   LIGHTBOX
+   ══════════════════════════════════════════════ */
 
-.fsl-track {
+.cf-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
   display: flex;
-  gap: 28px;
-  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
-  will-change: transform;
-}
-
-.fsl-card {
-  flex: 0 0 calc(25% - 21px);
-  min-width: 0;
-  text-align: center;
-  padding: 36px 24px 32px;
-  border-radius: 20px;
-  background: var(--surface-color, #fff);
-  border: 1px solid
-    color-mix(in srgb, var(--default-color, #222) 8%, transparent);
-  box-shadow: 0 4px 24px
-    color-mix(in srgb, var(--default-color, #222) 5%, transparent);
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.92);
+  opacity: 0;
+  visibility: hidden;
   transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-  pointer-events: none;
-}
-.fsl-card.is-draggable {
-  pointer-events: auto;
-}
-.fsl-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 40px
-    color-mix(in srgb, var(--accent-color) 12%, transparent);
+    opacity 0.25s ease,
+    visibility 0.25s ease;
+  padding: 20px;
 }
 
-.fsl-icon {
-  width: 120px;
-  height: 110px;
-  margin: 0 auto 24px;
+.cf-lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cf-lightbox-inner {
+  position: relative;
+  max-width: 1100px;
+  width: 100%;
+  max-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.fsl-icon svg {
-  width: 100%;
-  height: 100%;
+
+.cf-lightbox img {
+  max-width: 100%;
+  max-height: 85vh;
+  border-radius: 12px;
+  object-fit: contain;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+  transform: scale(0.92);
+  transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+  display: block;
 }
 
-.fsl-card h3 {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--heading-color, #0f172a);
-  margin-bottom: 10px;
-  line-height: 1.4;
-}
-.fsl-card p {
-  font-size: 0.88rem;
-  color: color-mix(in srgb, var(--default-color, #222) 65%, transparent);
-  line-height: 1.7;
-  margin: 0;
+.cf-lightbox.is-open img {
+  transform: scale(1);
 }
 
-.fsl-dots {
-  display: flex;
-  justify-content: center;
-  gap: 7px;
-  margin-top: 32px;
-}
-.fsl-dot {
-  width: 8px;
-  height: 8px;
+.cf-lightbox-close {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  border: none;
-  padding: 0;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 20px;
   cursor: pointer;
-  background: color-mix(in srgb, var(--default-color, #222) 18%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition:
-    background 0.3s,
-    transform 0.3s,
-    width 0.3s;
-}
-.fsl-dot.active {
-  background: var(--accent-color);
-  width: 24px;
-  border-radius: 4px;
+    background 0.2s ease,
+    transform 0.2s ease;
+  line-height: 1;
 }
 
-@media (max-width: 991px) {
-  .fsl-card {
-    flex: 0 0 calc(50% - 14px);
+.cf-lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.28);
+  transform: scale(1.1);
+}
+
+/* Navegar no lightbox */
+.cf-lightbox-prev,
+.cf-lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+  z-index: 2;
+}
+.cf-lightbox-prev {
+  left: -56px;
+}
+.cf-lightbox-next {
+  right: -56px;
+}
+
+.cf-lightbox-prev:hover,
+.cf-lightbox-next:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.cf-lightbox-prev svg,
+.cf-lightbox-next svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2.5;
+}
+
+@media (max-width: 768px) {
+  .cf-lightbox-prev {
+    left: 0;
+  }
+  .cf-lightbox-next {
+    right: 0;
+  }
+  .cf-lightbox-close {
+    top: -48px;
+    right: 0;
   }
 }
 
-@media (max-width: 575px) {
-  .features-slider-section {
-    padding: 48px 0 56px;
-  }
-
-  .fsl-viewport {
-    padding: 10px 0 20px;
-    overflow: hidden;
-  }
-
-  .fsl-track {
-    gap: 16px;
-    padding: 0 7.5%;
-  }
-
-  .fsl-card {
-    flex: 0 0 85%;
-  }
+/* contador de slides no lightbox */
+.cf-lightbox-counter {
+  position: absolute;
+  bottom: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
 }
-
 /* FAQ SECTION */
 .faq {
   background: #f8f9fa;

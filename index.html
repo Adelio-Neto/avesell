@@ -37,6 +37,15 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EF02MW4VDG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EF02MW4VDG');
+</script>
   </head>
 
   <body class="index-page">
@@ -59,12 +68,13 @@
               <a href="#hero" class="active">Início</a>
             </li>
             <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#vant">Vantagens</a></li>
 
             <li>
-              <a href="#portfolio">Funcionalidades</a>
+              <a href="#func">Funcionalidades</a>
             </li>
             <li><a href="#why-us">FAQ</a></li>
-            <li><a href="#contact">Contatos</a></li>
+            <li><a href="#suport">Suporte</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -94,7 +104,7 @@
                 </p>
 
                 <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
-                  <a href="register.html" class="cta-button">
+                  <a href="/cadastro.php" class="cta-button">
                     <span>Criar Loja Grátis</span>
                     <i class="bi bi-arrow-right"></i>
                   </a>
@@ -265,7 +275,7 @@
         </div>
       </section>
 
-      <section id="services" class="services section">
+      <section id="vant" class="services section">
         <div class="container section-title" data-aos="fade-up">
           <h2>Vantagens</h2>
           <p>
@@ -364,7 +374,7 @@
         </div>
       </section>
 
-      <section id="portfolio" class="portfolio section">
+      <section id="func" class="portfolio section">
         <div class="container section-title" data-aos="fade-up">
           <h2>Funcionalidades</h2>
           <p>
@@ -682,7 +692,7 @@
                 complexidade. Apenas você e as suas vendas.
               </p>
               <div class="cta-buttons">
-                <a href="register.html" class="btn-cta-primary">
+                <a href="/cadastro.php" class="btn-cta-primary">
                   <span>Criar Loja Grátis</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
@@ -892,150 +902,70 @@
         </div>
       </section>
 
-      <section id="contact" class="contact section">
+      <section id="services" class="services section">
         <div class="container section-title" data-aos="fade-up">
-          <h2>Contato</h2>
+          <h2>Suporte</h2>
           <p>
-            Entre em contacto connosco e descubra como podemos ajudar a fazer
-            crescer o seu negócio online
+            Nossa equipe está pronta para ajudar você a resolver qualquer
+            dúvida.
           </p>
         </div>
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-5 align-items-stretch">
-            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
-              <div class="info-panel">
-                <div class="panel-header">
-                  <span class="section-badge">
-                    <i class="bi bi-chat-dots-fill"></i>
-                    <span>Fale Connosco</span>
-                  </span>
-                  <h3>Vamos fazer crescer o seu negócio online</h3>
-                  <p>
-                    A nossa equipa está pronta para ajudar com soluções
-                    eficientes e personalizadas para a sua loja.
-                  </p>
+        <div
+          id="suport"
+          class="container"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="row g-4">
+            <!-- Card 1 - WhatsApp -->
+            <div class="col-lg-4 col-md-6">
+              <div class="service-card text-center">
+                <div class="icon-wrapper mx-auto text-center">
+                  <i class="bi bi-whatsapp"></i>
                 </div>
-
-                <div class="contact-methods">
-                  <div class="method-item">
-                    <div class="method-icon">
-                      <i class="bi bi-envelope-paper-fill"></i>
-                    </div>
-                    <div class="method-details">
-                      <span class="method-label">Email</span>
-                      <a href="mailto:suporte@avesell.com"
-                        >suporte@avesell.com</a
-                      >
-                    </div>
-                  </div>
-                  <div class="method-item">
-                    <div class="method-icon"><i class="bi bi-headset"></i></div>
-                    <div class="method-details">
-                      <span class="method-label">Telefone</span>
-                      <a href="tel:+351210000000">+351 210 000 000</a>
-                    </div>
-                  </div>
-                  <div class="method-item">
-                    <div class="method-icon">
-                      <i class="bi bi-pin-map-fill"></i>
-                    </div>
-                    <div class="method-details">
-                      <span class="method-label">Endereço</span>
-                      <span>Luanda, Angola</span>
-                    </div>
-                  </div>
-                </div>
+                <h3>WhatsApp</h3>
+                <p>
+                  Fale diretamente com nossa equipe e receba atendimento rápido
+                  e prático.
+                </p>
+                <a
+                  href="https://wa.me/244XXXXXXXXX"
+                  target="_blank"
+                  class="d-block text-center"
+                >
+                  Iniciar Conversa
+                </a>
               </div>
             </div>
 
-            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
-              <div class="form-card">
-                <div class="form-card-header">
-                  <div class="header-icon"><i class="bi bi-send-fill"></i></div>
-                  <div class="header-text">
-                    <h4>Envie uma Mensagem</h4>
-                    <p>
-                      Preencha o formulário e responderemos em até 24 horas.
-                    </p>
-                  </div>
+            <!-- Card 2 - Email -->
+            <div class="col-lg-4 col-md-6">
+              <div class="service-card text-center">
+                <div class="icon-wrapper mx-auto text-center">
+                  <i class="bi bi-envelope"></i>
                 </div>
+                <h3>Email</h3>
+                <p>Envie sua dúvida ou problema detalhado para nossa equipe.</p>
+                <a
+                  href="mailto:suporte@avesell.com"
+                  target="_blank"
+                  class="d-block text-center"
+                >
+                  suporte@avesell.com
+                </a>
+              </div>
+            </div>
 
-                <form class="php-email-form">
-                  <div class="row g-4">
-                    <div class="col-md-6">
-                      <div class="input-group-custom">
-                        <label>Seu Nome</label>
-                        <div class="input-wrapper">
-                          <i class="bi bi-person"></i>
-                          <input
-                            type="text"
-                            name="name"
-                            placeholder="Seu nome"
-                            required
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="input-group-custom">
-                        <label>Email</label>
-                        <div class="input-wrapper">
-                          <i class="bi bi-envelope"></i>
-                          <input
-                            type="email"
-                            name="email"
-                            placeholder="seu@email.com"
-                            required
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="input-group-custom">
-                        <label>Assunto</label>
-                        <div class="input-wrapper">
-                          <i class="bi bi-chat-square-text"></i>
-                          <input
-                            type="text"
-                            name="subject"
-                            placeholder="Como podemos ajudar?"
-                            required
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="input-group-custom">
-                        <label>Sua Mensagem</label>
-                        <div class="input-wrapper textarea-wrapper">
-                          <i class="bi bi-pencil-square"></i>
-                          <textarea
-                            name="message"
-                            rows="5"
-                            placeholder="Descreva a sua necessidade..."
-                            required
-                          ></textarea>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-actions">
-                    <div class="loading">Carregando</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">
-                      A sua mensagem foi enviada com sucesso. Obrigado!
-                    </div>
-                    <button type="submit" class="btn-submit">
-                      <span>Enviar Mensagem</span>
-                      <i class="bi bi-arrow-right-circle-fill"></i>
-                    </button>
-                    <div class="secure-note">
-                      <i class="bi bi-lock-fill"></i>
-                      <span>Os seus dados estão seguros e protegidos</span>
-                    </div>
-                  </div>
-                </form>
+            <!-- Card 3 - Horário -->
+            <div class="col-lg-4 col-md-6">
+              <div class="service-card text-center">
+                <div class="icon-wrapper mx-auto text-center">
+                  <i class="bi bi-clock"></i>
+                </div>
+                <h3>Horário de Atendimento</h3>
+                <p>Segunda a sexta, das 9h às 18h (exceto feriados).</p>
+                <a href="#" class="d-block text-center"> Ver horários </a>
               </div>
             </div>
           </div>
@@ -1056,7 +986,8 @@
           <div class="footer-links d-flex gap-4">
             <a href="#about">Sobre</a>
             <a href="#why-us">FAQ</a>
-            <a href="#contact">Contactos</a>
+            <a href="#suport">Suporte</a>
+
             <a href="#">Política de Privacidade</a>
             <a href="#">Termos e Condições</a>
           </div>
